@@ -8,8 +8,14 @@ namespace ProjetGestionFilms.Modeles
 {
     public class Personne
     {
-        public int id { get; set; }
-        public string nom { get; set; }
-        public string sexe { get; set; }
+        private int _id;
+        private string _nom;
+        private string _sexe;
+
+
+        public int Id { get { return _id; } set { _id = value; } }
+        public string Nom {  get { return _nom; }  set { _nom = value; } }
+
+        public string Sexe { get { return _sexe; } set { _sexe = value; } }
     }
 }
